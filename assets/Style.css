@@ -2,7 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    background-color: rgb(202, 218, 223);
+    /* outline: 1px solid red; */
 }
 
 body{
@@ -12,27 +13,57 @@ body{
 
 h1{
     font-family: sans-serif;
+    flex-grow: 0.9;
     font-size: 3rem;
+    color: rgb(51, 170, 91);
+    text-shadow: 2px 2px rgb(0, 128, 107);
+    
 }
+
+h2{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 15px;
+}
+
 
 header{
-    display: block;
     width: 100vw;
-    height: 40vh;
-    background: url(./imagenes/design2_image1.jpg) left no-repeat;
-    background-attachment:fixed ;
-    background-size: cover;
+    height: 9vh;
+    display: flex;
+    gap: 1;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-/* .banner{
-    width: 100%;
-    height: 100%;
-} */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#about{
+    margin-top: 10px;
+}
+
+#contact{
+    margin-top: 10px;
+}
+
+.banner{
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+}  
 
 nav{
-    position: absolute;
-    left: 75vw;
-    top: 4.7vh;
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    gap: 7px;
+    flex-wrap: wrap;
 }
 
 nav>a:hover{
@@ -44,16 +75,16 @@ nav>a:active{
 }
 
 a[href="#"]{
-    background-color: green;
+    background-color: rgb(200, 216, 219);
 }
 
 nav>a{
     text-decoration: none;
     color: inherit;
-    background-color: rgb(90, 90, 197);
+    background-color: rgb(128, 203, 216);
     font-size: 1.2rem;
     display: inline-block;
-    color: white;
+    color: black;
     border: 1px solid black;
     padding-left: 15px;
     padding-right: 15px;
@@ -62,28 +93,21 @@ nav>a{
 }
 
 h3 {
-    display: block;
+    display: flex;
     border: 2px solid black;
-    text-align: center;
+    justify-content: center;
     font-size: 1.5rem;
+    background-color: rgb(128, 203, 216);
 }
 
 h4{
     font-size: 1.2rem;
 }
 
-.logo{
-    display: inline-block;
-    position: absolute;
-    top: 58vh;
-    left: 1vw;
-}
-
-.contenido{
-    display: inline-block;
-    position: absolute;
-    left: 10vw;
-    top: 59vh;
+#pr{
+    color: black;
+    margin-left: 33vw;
+    font-size: 1.1rem;
 }
 
 p{
@@ -91,24 +115,120 @@ p{
     font-size: 1.1rem;
 }
 
-.img1y3{
-    display: inline-block;
-    position: absolute;
-    top: 55vh;
-    left: 60vw;
+.logo{
+    width: 10vw;
+    
+    
+}
+
+.img1{
+    order: 3;
+    margin-top: 10px;
 }
 
 .img2{
+    order: 3;
+   width: 10vw;
+}
+
+.img3{
+    order: 3;
+}
+
+.contenido{
+    margin-top: 10px;
+}
+
+.txtl{
+    width: 75vw;
+}
+
+#pa{
+   
+    border: 2px;
+    border-style: dashed;
+    border-color: rgb(91, 204, 198);
+}
+
+#rules{
+    margin-top: 10px;
+    border: 3px solid rgb(91, 204, 198);
+    border-style: dashed;
+}
+
+dd>ol{
+    padding-left: 10px;
+}
+
+#rules_s{
+    border-left: 3px dashed rgb(91, 204, 198);
+    padding-left: 20px;
+}
+
+#all_play{
+    text-align: center;
+    margin-top: 10px;
+   padding: 10px;
+}
+
+#fall{
+    margin-top: 10px;
+}
+
+#fall_sheet{
+    background-image: url(./imagenes/Hoja-de-otono.png);
+    background-repeat: repeat;
+    background-size: 20vw;
+}
+
+h5{
+    font-size: 1.1rem;
     display: inline-block;
-    position: absolute;
-    top: 78vh;
-    left: 1vw;
+    background-color: rgb(128, 203, 216);
+    border: 1px solid black;
+    margin-left: 40%;
+}
+
+#game{
+    margin-top: 30px;
+    background: none;
+}
+
+table{
+    border: 2px solid black;
+    width: 70vw;
+    font-size: 1.2rem;
+}
+
+th{
+    border: 2px solid black;
+    background-color: aquamarine;
+}
+
+td{
+    border: 2px solid black;
 }
 
 
-
-#txtl{
-    padding-right: 100px;
+.one{
+    background-color: rgb(77, 202, 119);
 }
 
+.two{
+    background-color: rgb(238, 228, 183);
+}
 
+#additional{
+    margin-top: 20px;
+    margin-left: 27vw;
+    display: inline-block;
+    border: 2px;
+    border-style: dotted;
+    border-color: rgb(79, 131, 131);
+    padding-right: 10px;
+}
+
+.pe{
+    display: inline-block;
+    margin-right: 50px;
+}
